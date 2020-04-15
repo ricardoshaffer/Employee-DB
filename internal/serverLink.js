@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 let serverLink = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "r!c@rd01987",
+    host: "mysql://bbdaf576376684:ed03b043@us-cdbr-iron-east-01.cleardb.net/heroku_55b03d9215f8de3?reconnect=true",
+    // port: 3306,
+    user: "	bbdaf576376684",
+    password: "ed03b043",
     database: "employee_manager"
   });
   
