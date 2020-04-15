@@ -12,19 +12,6 @@ $(".update-employee").on("submit", function(event) {
         salary: $("#salary").val().trim()
     };
     var id = $(this).data("id");
-// Send the POST request.
-        // $.ajax("/api/employees", {
-        //     type: "POST",
-        //     data: newQuote
-        //   }).then(
-        //     function() {
-        //       console.log("created new quote");
-        //       // Reload the page to get the updated list
-        //       location.reload();
-        //     }
-        //   );
-        // });
-        
 
     // Send the PUT request.
     $.ajax("/api/update/" + id, {
@@ -61,7 +48,24 @@ $(".update-employee").on("submit", function(event) {
         location.reload();
       }
     );
-  });
 
+    
+  });
+  $(function() {
+    $(".delete-Employee").on("click", function(event) {
+      var id = $(this).data("id");
+  
+      // Send the DELETE request.
+      $.ajax("/api/" + id, {
+        type: "DELETE"
+      }).then(
+        function() {
+          console.log("deleted id ", id);
+          location.reload();
+        }
+      );
+    });
+});
 
 })
+

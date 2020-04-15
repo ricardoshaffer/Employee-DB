@@ -34,7 +34,7 @@
        <td>{{this.title}}</td>
        <td>{{this.department}}</td>
        <td>{{this.salary}}</td>
-       <td><i class="fas fa-user-minus"></i></td>
+       <td><a href="/{{this.id}}" class="delete-Employee" data-id="{{this.id}}"><i class="fas fa-user-minus"></i></a></td>
 </tr>
   {{/each}}
   </tbody>

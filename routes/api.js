@@ -52,11 +52,9 @@ router.put("/api/update/:id", function(req, res) {
       [req.body.first_name, req.body.last_name, req.body.employee_ID, req.body.title, req.body.department, req.body.salary, req.params.id],
       function(err, result) {
         if (err) {
-          // If an error occurred, send a generic server failure
           return res.status(500).end();
         }
         else if (result.changedRows === 0) {
-          // If no rows were changed, then the ID must not exist, so 404
           return res.status(404).end();
         }
         res.status(200).end();
@@ -68,20 +66,18 @@ router.put("/api/update/:id", function(req, res) {
 
 //====== UPDATED DATA
   
-//   router.delete("/api/quotes/:id", function(req, res) {
-//     serverLink.query("DELETE FROM quotes WHERE id = ?", [req.params.id], function(err, result) {
-//       if (err) {
-//         // If an error occurred, send a generic server failure
-//         return res.status(500).end();
-//       }
-//       else if (result.affectedRows === 0) {
-//         // If no rows were changed, then the ID must not exist, so 404
-//         return res.status(404).end();
-//       }
-//       res.status(200).end();
+  router.delete("/api/:id", function(req, res) {
+    serverLink.query("DELETE FROM employees WHERE id = ?", [req.params.id], function(err, result) {
+      if (err) {
+        return res.status(500).end();
+      }
+      else if (result.affectedRows === 0) {
+        return res.status(404).end();
+      }
+      res.status(200).end();
   
-//     });
-//   });
+    });
+  });
   
 
 
