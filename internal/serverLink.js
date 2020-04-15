@@ -12,14 +12,6 @@ if(process.env.JAWSDB_URL){
         database: "employee_manager"
     })
 }
-    serverLink = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "r!c@rd01987",
-    database: "employee_manager"
-  });
-  
-  
+   
   serverLink.connect();
   module.exports = serverLink;
