@@ -30,5 +30,5 @@ let serverLink = mysql.createConnection({
   
     console.log("connected as id " + serverLink.threadId);
   });
-  
+  serverLink.connect();
   module.exports = serverLink;
