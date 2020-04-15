@@ -38,7 +38,7 @@ router.post("/api/add", function(req, res) {
     [req.body.first_name, req.body.last_name, req.body.employee_ID, req.body.title, req.body.department, req.body.salary], 
     function(err, result) {
       res.json({ id: result.insertId });
-      res.redirect("/");
+      res.status(200).end();
     });
   });
   
