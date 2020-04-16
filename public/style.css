@@ -1,0 +1,38 @@
+.table-dark {
+    background-color: #523a6e;
+    background-image: linear-gradient(rgb(83, 40, 185), rgb(83, 49, 206));
+    border-radius: 15px;
+    box-shadow: -6px -6px 20px 0px rgba(255, 255, 255, 0.959), 6px 6px 10px 0px rgba(185, 180, 171, 0.75);
+}
+body{
+    background-color: #efeeee;
+}
+.fa-user-minus {
+    background-color: #956eff;
+    color: #e6e8ff !important;
+    padding: 2px;
+    border-radius: 3px;
+    box-shadow: -2px -2px 5px 0px rgba(255, 255, 255, 0.25), 2px 2px 6px 0px rgb(25, 1, 31,0.70);
+
+}
+.fa-user-edit{
+    background-color: #582ccf;
+    color: #e6fff9 !important;
+    padding: 2px;
+    border-radius: 3px;
+    box-shadow: -2px -2px 4px 0px rgba(29, 18, 49, 0.5); 
+    box-shadow: 2px 2px 6px opx rgba(255,255,255, 0.6);
+
+}
+.table-dark td, .table-dark th, .table-dark thead th {
+border-color: rgba(255,255,255,0.90);
+}
+.btn-info, .btn-primary{
+    border-radius: 15px;
+    background-color:#efeeee !important;
+    color: #5a5e8a !important;
+    border: none !important;
+    box-shadow: -2px -2px 2px 0 rgba(182, 182, 182, 0.7) inset, 2px 2px 4px 0 rgba(255,255,255, 0.90) inset, -4px -4px 7px 0px rgba(207, 201, 191, 0.6), 4px 4px 10px 0px rgba(255, 255, 255, 0.9) !important;
+    -moz-box-shadow:  -2px -2px 2px 0 rgba(182, 182, 182, 0.7) inset, 2px 2px 4px 0 rgba(255,255,255, 0.90) inset, -4px -4px 7px 0px rgba(207, 201, 191, 0.6), 4px 4px 10px 0px rgba(255, 255, 255, 0.9) !important;
+    -webkit-box-shadow:  -2px -2px 2px 0 rgba(182, 182, 182, 0.7) inset, 2px 2px 4px 0 rgba(255,255,255, 0.90) inset, -4px -4px 7px 0px rgba(207, 201, 191, 0.6), 4px 4px 10px 0px rgba(255, 255, 255, 0.9) !important;
+}
