@@ -45,7 +45,7 @@ $(".update-employee").on("submit", function(event) {
       data: createEmployee
     }).then(
       function() {
-        location.reload();
+        location.assign('/');
       }
     );
 
@@ -61,7 +61,7 @@ $(".update-employee").on("submit", function(event) {
       }).then(
         function() {
           console.log("deleted id ", id);
-          location.reload();
+          location.assign('/');
         }
       );
     });

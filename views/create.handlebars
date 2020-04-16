@@ -23,7 +23,16 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="employeeDepartment">Employee Department</label>
-      <input type="text" name="department" class="form-control" value="" placeholder="{{this.department}}" id="department">
+        <select class="custom-select my-1 mr-sm-2 department" id="department">
+            <option selected>Choose...</option>
+            <option value="Sales Lead">Sales Lead</option>
+            <option value="Salesperson">Salesperson</option>
+            <option value="Lead Engineer">Lead Engineer</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Account Manager">Account Manager</option>
+            <option value="Accountant">Accountant</option>
+            <option value="Legal Team">Legal Team</option>
+        </select>
     </div>
     <div class="form-group col-md-2">
       <label for="employeeSalary">Employee Salary</label>

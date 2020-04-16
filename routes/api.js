@@ -26,6 +26,17 @@ router.get("/", function(req, res) {
       res.render("create");
 
   });
+  router.get("/api/:id", function(req, res) {
+    serverLink.query("SELECT * FROM employees where id = ?", [req.params.id], function(err, data) {
+      if (err) {
+        return res.status(500).end();
+      }
+  
+      console.log(data);
+      res.render("index", data[0]);
+    });
+  });
+  
   //=== UPDATED DATA
 //==============================
 // SAVES DATA FROM THE DATABASE
