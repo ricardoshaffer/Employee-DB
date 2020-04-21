@@ -37,12 +37,10 @@ router.get("/", function(req, res) {
     });
   });
   
-  //=== UPDATED DATA
 //==============================
 // SAVES DATA FROM THE DATABASE
 //==============================
 
-//====== UPDATED DATA
 
 router.post("/api/add", function(req, res) {
     serverLink.query("INSERT INTO employees(first_name, last_name, employee_ID, title, department, salary) VALUES (?, ?, ?, ?, ?, ?)", 

@@ -21,7 +21,7 @@ $(".update-employee").on("submit", function(event) {
       function() {
         console.log("updated quote");
         // Reload the page to get the updated list
-        location.assign("/update/:id");
+        location.assign("/");
       }
     );
   })
